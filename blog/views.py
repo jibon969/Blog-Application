@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Post
-from .forms import EmailPostForm
 from django.core.mail import send_mail
+from .forms import EmailPostForm
 
 
 def post_list(request):
